@@ -1,4 +1,5 @@
 html {
+    position: relative;
     min-height: 100%;
     margin: 0;
     background-color: darkgray;
@@ -29,11 +30,19 @@ h2 {
     gap: 10px;
 }
 
+#muffin,
+#joe,
+#dog {
+    height: 500px;
+    width: 700px;
+}
+
 .discription {
     border: 15px grey solid;
     display: flex;
     flex-direction: column;
     padding: 20px;
+    font-size: 17px;
 }
 
 
@@ -47,4 +56,73 @@ h2 {
 a {
     padding: 30px;
     text-decoration: none;
+}
+
+/*Responsive for for all screen sizes*/
+@media screen and (max-width: 767px) {
+
+    /* to do : adjust all values to match the mobile screen*/
+    header {
+        margin: 0;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #muffin,
+    #dog {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    #joe {
+        height: 19rem;
+        width: 21rem;
+
+    }
+
+    .discription {
+        height: 45rem;
+        width: 21rem;
+        font-size: 13px;
+        padding: 0;
+        border: 5px grey solid;
+    }
+
+    a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        margin: 0;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #muffin {
+        height: 30rem;
+        width: 30rem;
+    }
+
+    .discription {
+        height: 45rem;
+        width: 45rem;
+        padding: 0;
+        border: 5px grey solid;
+    }
 }
