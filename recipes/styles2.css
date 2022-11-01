@@ -1,5 +1,50 @@
 html {
     min-height: 100%;
+    margin: 0;
     background-color: darkgray;
     border: 10px black solid;
+}
+
+
+header {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 4.2vh;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10vh;
+    gap: 10px;
+}
+
+.discription {
+    border: 15px grey solid;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+.footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 5vh;
+}
+
+a {
+    padding: 30px;
+    text-decoration: none;
 }
